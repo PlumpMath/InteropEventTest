@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+<assemblyIdentity name="InteropEventTest" version="1.0.0.0" type="win32"/>
+
+<clrClass
+   name="InteropEventTest.InteropConnection"
+   clsid="{2EE25BBD-1849-4CA8-8369-D65BF47886A5}"
+   progid="InteropEventTest.InteropConnection"
+   runtimeVersion="v4.0.30319"
+   threadingModel="Both"/>
+
+<file name="InteropEventTest.tlb">
+ <typelib
+     tlbid="{5CD6C635-503F-4103-93B0-3EBEFB91E500}"
+     version="1.0"
+     helpdir=""
+     flags="hasdiskimage"/>
+</file>
+<comInterfaceExternalProxyStub 
+    name="ITheEvents" 
+    iid="{E1BC643E-0CCF-4A91-8499-71BC48CAC01D}"
+    proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"
+    baseInterface="{00000000-0000-0000-C000-000000000046}"
+    tlbid="{5CD6C635-503F-4103-93B0-3EBEFB91E500}" />
+</assembly>
